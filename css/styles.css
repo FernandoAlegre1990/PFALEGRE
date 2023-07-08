@@ -1,0 +1,61 @@
+header {
+  background-color: red;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  height: 50%;
+  
+}
+
+header h1 {
+  margin: 0;
+  display: block;
+  margin: 0 auto;
+}
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Estilos para la sección principal */
+section {
+  padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+.contenedor-imagenes {
+  overflow: auto;
+}
+
+.contenedor-imagenes img {
+  float: left;
+  margin-right: 20px;
+}
