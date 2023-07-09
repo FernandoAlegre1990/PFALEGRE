@@ -20,10 +20,10 @@
             <div class="collapse navbar-collapse" id="menu">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link active" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
                 <li class="nav-item"><a class="nav-link" href="resultados.html">Resultados</a></li>
                 <li class="nav-item"><a class="nav-link" href="posiciones.html">Posiciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
               </ul>
                 <ul class="navbar-nav flex-row flex-wrap text-light">
                     <li class="nav-item col-6 col-md-auto p-3"><a href="https://twitter.com/depmoronoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bi bi-twitter"></i><small class="d-md-none ms-2">Twitter</small></a></li>
@@ -37,23 +37,22 @@
         
 
     </nav>
-        <section>
-            <h2>Contactacte con nosotros</h2>
-            <form action="enviar.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-        
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+    <div class="mb-3 m-4 col-12 col-lg-4">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="name" class="form-control" id="nombre">
+      </div>
+      <div class="mb-3 m-4 col-12 col-lg-4">
+        <label for="Apellido" class="form-label">Apellido</label>
+        <input class="form-control" id="Apellido" >
+      </div>
+      <div class="mb-3 m-4 col-12 col-lg-4">
+        <label for="Email" class="form-label">Email</label>
+        <input class="form-control" id="Email" >
+      </div>
+      <div class="mb-3 m-4">
+        <label for="Mensaje" class="form-label">Dejanos tu mensaje</label>
+        <textarea class="form-control" id="Mensaje" rows="3"></textarea>
+      </div>
         <footer>
             <p>&copy; 2023 Club Deportivo Morón. Todos los derechos reservados.</p>
         </footer>
