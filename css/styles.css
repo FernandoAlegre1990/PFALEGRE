@@ -24,4 +24,26 @@ nav div a img {
   width: 80px;
   height: 80px;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.moron {
+  background-color: gray;  
+}
+.promocion {
+  background-color: yellow;
+}
+.descenso {
+  background-color: red;
+}
