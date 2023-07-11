@@ -110,3 +110,38 @@ th {
     margin-right: 0;
   }
 }
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.product img {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.product h2 {
+  margin-top: 10px;
+}
+
+.product p {
+  margin: 10px 0;
+}
+
+.select-talle {
+  margin-bottom: 10px;
+}
