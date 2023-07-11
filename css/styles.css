@@ -25,8 +25,10 @@ nav div a img {
   height: 80px;
 }
 table {
+ 
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
+border: #333;
 }
 
 th, td {
@@ -46,4 +48,65 @@ th {
 }
 .descenso {
   background-color: red;
+}
+.prox-partido,
+.ult-partido {
+  margin-top: 20px;
+}
+
+.prox-partido h2,
+.ult-partido h2 {
+  margin-bottom: 10px;
+}
+
+.prox-partido table,
+.ult-partido table {
+  border-collapse: collapse;
+  width: 25%;
+}
+
+.prox-partido th,
+.prox-partido td,
+.ult-partido th,
+.ult-partido td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.prox-partido th,
+.ult-partido th {
+  background-color: #f2f2f2;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container img {
+  margin-right: 10px; /* Espacio entre la imagen y la tabla */
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container img {
+    margin-bottom: 10px; /* Espacio entre la imagen y la tabla en vista móvil */
+    margin-right: 0;
+  }
 }
