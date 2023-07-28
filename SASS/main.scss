@@ -1,0 +1,142 @@
+/*footer de página*/
+@import "./footer/resets.scss";
+
+/*menu de navegación*/
+@import "./navbar/navbarimg.scss";
+
+/*fuente roboto*/
+@import "./_variables/fuentes.scss";
+
+/*estilos para tablas*/
+@import "./_tablas/tables.scss";
+
+/*estilos para la tienda*/
+@import "./_shop/tienda.scss";
+/* estilos para formulario*/
+@import "./_formulario/_formulario.scss";
+
+
+
+body{
+
+    background-image: url("../imagenes/fondo1.jpg");
+    background-size: cover;
+
+    
+}
+.container {
+  margin : 10px;
+  width: 100%
+
+}
+
+
+
+
+
+  
+  .proximo-partido {
+    position:absolute;
+    text-align: center;
+    width: 25%;
+    top: 65%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+  }
+  
+  .proximo-partido p {
+    margin: 20px;;
+    text-align: center;
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: $roboto-font;
+  }
+
+  .cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .cerrar:hover {
+    color: #ff0000; 
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    .proximo-partido {
+      display: none;
+    }
+  }
+
+  .banner {
+    width: auto;
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .camiseta-alt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    img {
+      width: 25%;
+      height: 50%;
+    }
+  }
+  main h1 {
+    color: white;
+    font-family: $roboto-font;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .prox-fecha {
+   text-align: center;
+  }
+  .ult-partido {
+    text-align: center;
+  }
+
+  .socio-link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.2s ease; 
+}
+
+.socio-banner {
+    background-color: red; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.socio-link:hover {
+    transform: translateY(-5px); 
+}
+  
+  
+  
+
+
+
+
+
