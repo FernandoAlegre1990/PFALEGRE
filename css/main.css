@@ -149,17 +149,20 @@ body {
 .image-card:hover .image-overlay {
   transform: translateY(0); }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .image-container {
     flex-direction: column;
-    align-items: center; }
-  .image-card {
+    align-items: center;
     width: 100%;
-    margin: 10px 0; } }
+    margin: 0; }
+    .image-container .image-card img {
+      width: 100%;
+      margin: 10px 0; } }
 
 .image-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px; }
 
 .image-card2 {
@@ -178,9 +181,13 @@ body {
 .image-card2:hover .image-overlay {
   transform: translateY(0); }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .image-row {
-    flex-direction: column; } }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0%;
+    width: 100%; } }
 
 /*TABLA CON RESULTADOS Y PROXIMOS PARTIDO*/
 /*estilos para tablas*/
@@ -270,3 +277,8 @@ form button:hover {
 
 .boton-carrito:hover {
   background-color: #0056b3; }
+
+/*Plantel */
+.plantel {
+  width: 100%;
+  height: auto; }
