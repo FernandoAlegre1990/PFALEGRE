@@ -7,8 +7,7 @@
 /*fuente roboto*/
 @import "./_variables/fuentes.scss";
 
-/*estilos para tablas*/
-@import "./_tablas/tables.scss";
+
 
 /*estilos para la tienda*/
 @import "./_shop/tienda.scss";
@@ -19,121 +18,189 @@
 
 body{
 
-    background-image: url("../imagenes/fondo1.jpg");
-    background-size: cover;
-
-    
-}
-.container {
-  margin : 10px;
-  width: 100%
+background-color: white;
+width: auto;
 
 }
+/* Contendio página principal */
+
+.image-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
 
 
+.image-card {
+  position: relative;
 
+  margin: 0 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
 
+.image-card img {
+  width: 400px; 
+  height: 500px;
+  transition: transform 0.3s ease-out;
+}
 
-  
-  .proximo-partido {
-    position:absolute;
-    text-align: center;
-    width: 25%;
-    top: 65%;
-    right: 20px;
-    transform: translateY(-50%);
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+.image-card:hover img {
+  transform: translateY(-10px); 
+}
 
-  }
-  
-  .proximo-partido p {
-    margin: 20px;;
-    text-align: center;
-    color: #ffffff; 
-    font-weight: bold;
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+  h2, p{
     font-family: $roboto-font;
   }
+}
 
-  .cerrar {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  .cerrar:hover {
-    color: #ff0000; 
-  }
+.image-card:hover .image-overlay {
+  transform: translateY(0);
+}
 
-  @media screen and (max-width: 768px) {
-  
-    .proximo-partido {
-      display: none;
-    }
-  }
-
-  .banner {
-    width: auto;
-
-    h1 {
-      text-align: center;
-      color: white;
-    }
-  }
-
-  .camiseta-alt {
-    display: flex;
-    justify-content: center;
+@media (max-width: 600px) {
+  .image-container {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: white;
-    img {
-      width: 25%;
-      height: 50%;
-    }
   }
-  main h1 {
-    color: white;
+  
+  .image-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+.image-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  }
+
+
+.image-card2 {
+  position: relative;
+
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.image-card2 img {
+  width: 300px; 
+  height: 300px;
+  transition: transform 0.3s ease-out;
+
+}
+.image-card2:hover img {
+  transform: translateY(-5px);
+}
+.image-card2:hover .image-overlay {
+  transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .image-row {
+    flex-direction: column;
+  }
+}
+
+/*TABLA CON RESULTADOS Y PROXIMOS PARTIDO*/
+/*estilos para tablas*/
+@import "./_tablas/tables.scss";
+
+
+
+
+/*Formulario de contacto*/
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-family: $roboto-font;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
+/*Tienda*/
+
+.shop {
+  p, h2{
+    color: black;
     font-family: $roboto-font;
-    display: flex;
-    justify-content: center;
   }
-
-
-  .prox-fecha {
-   text-align: center;
-  }
-  .ult-partido {
-    text-align: center;
-  }
-
-  .socio-link {
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    transition: transform 0.2s ease; 
 }
 
-.socio-banner {
-    background-color: red; 
-    color: #fff; 
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px;
+.boton-carrito {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.socio-link:hover {
-    transform: translateY(-5px); 
+.boton-carrito:hover {
+  background-color: #0056b3;
 }
-  
-  
+
+
+
   
 
 
